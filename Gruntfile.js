@@ -45,6 +45,9 @@ module.exports = function(grunt) {
     }
   });
 
+  // Load NPM tasks
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+
   // Register customer task for ngrok
   grunt.registerTask('psi-ngrok', 'Run pagespeed with ngrok', function() {
     var done = this.async();
@@ -61,9 +64,10 @@ module.exports = function(grunt) {
     });
   });
 
+
+
   // Register default tasks
   grunt.registerTask('default', ['psi-ngrok']);
 
-  // Load NPM tasks
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+
 }
