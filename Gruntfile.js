@@ -37,7 +37,11 @@ module.exports = function(grunt) {
     	js: {
     		src: ['js/perfmatters.js'],
     		dest: 'js/perfmatters.js'
-    	}
+    	},
+      cs: {
+        src: ['css/styles.css'],
+        dest: 'css/styles.css'
+      }
     }
   });
 
