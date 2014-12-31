@@ -1,20 +1,511 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'init' ]
+1 verbose cli   'install',
+1 verbose cli   'grunt-pagespeed',
+1 verbose cli   '–save-dev',
+1 verbose cli   'npm',
+1 verbose cli   'install',
+1 verbose cli   'load-grunt-tasks',
+1 verbose cli   '–save-dev' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
 4 verbose node symlink C:\Program Files\nodejs\\node.exe
-5 error Error: ENOENT, stat 'C:\Users\Patrick\AppData\Roaming\npm'
-6 error If you need help, you may report this *entire* log,
-6 error including the npm and node versions, at:
-6 error     <http://github.com/npm/npm/issues>
-7 error System Windows_NT 6.2.9200
-8 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "init"
-9 error cwd C:\Users\Patrick\udportfolio
-10 error node -v v0.10.35
-11 error npm -v 1.4.28
-12 error path C:\Users\Patrick\AppData\Roaming\npm
-13 error code ENOENT
-14 error errno 34
-15 verbose exit [ 34, true ]
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'grunt-pagespeed', null ]
+7 verbose cache add name=undefined spec="grunt-pagespeed" args=["grunt-pagespeed",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'grunt-pagespeed',
+8 verbose parsed url   path: 'grunt-pagespeed',
+8 verbose parsed url   href: 'grunt-pagespeed' }
+9 verbose cache add [ '–save-dev', null ]
+10 verbose cache add name=undefined spec="–save-dev" args=["–save-dev",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: '–save-dev',
+11 verbose parsed url   path: '–save-dev',
+11 verbose parsed url   href: '–save-dev' }
+12 verbose cache add [ 'npm', null ]
+13 verbose cache add name=undefined spec="npm" args=["npm",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'npm',
+14 verbose parsed url   path: 'npm',
+14 verbose parsed url   href: 'npm' }
+15 verbose cache add [ 'install', null ]
+16 verbose cache add name=undefined spec="install" args=["install",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'install',
+17 verbose parsed url   path: 'install',
+17 verbose parsed url   href: 'install' }
+18 verbose cache add [ 'load-grunt-tasks', null ]
+19 verbose cache add name=undefined spec="load-grunt-tasks" args=["load-grunt-tasks",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'load-grunt-tasks',
+20 verbose parsed url   path: 'load-grunt-tasks',
+20 verbose parsed url   href: 'load-grunt-tasks' }
+21 verbose cache add [ '–save-dev', null ]
+22 verbose cache add name=undefined spec="–save-dev" args=["–save-dev",null]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: '–save-dev',
+23 verbose parsed url   path: '–save-dev',
+23 verbose parsed url   href: '–save-dev' }
+24 silly lockFile 6e104c97-grunt-pagespeed grunt-pagespeed
+25 verbose lock grunt-pagespeed C:\Users\Patrick\AppData\Roaming\npm-cache\6e104c97-grunt-pagespeed.lock
+26 silly lockFile 36ac6028-save-dev –save-dev
+27 verbose lock –save-dev C:\Users\Patrick\AppData\Roaming\npm-cache\36ac6028-save-dev.lock
+28 silly lockFile 660051d1-npm npm
+29 verbose lock npm C:\Users\Patrick\AppData\Roaming\npm-cache\660051d1-npm.lock
+30 silly lockFile 89fb511f-install install
+31 verbose lock install C:\Users\Patrick\AppData\Roaming\npm-cache\89fb511f-install.lock
+32 silly lockFile 944ab2e0-load-grunt-tasks load-grunt-tasks
+33 verbose lock load-grunt-tasks C:\Users\Patrick\AppData\Roaming\npm-cache\944ab2e0-load-grunt-tasks.lock
+34 silly lockFile 36ac6028-save-dev –save-dev
+35 verbose lock –save-dev C:\Users\Patrick\AppData\Roaming\npm-cache\36ac6028-save-dev.lock
+36 silly lockFile 6e104c97-grunt-pagespeed grunt-pagespeed
+37 silly lockFile 6e104c97-grunt-pagespeed grunt-pagespeed
+38 silly lockFile 89fb511f-install install
+39 silly lockFile 89fb511f-install install
+40 silly lockFile 660051d1-npm npm
+41 silly lockFile 660051d1-npm npm
+42 silly lockFile 36ac6028-save-dev –save-dev
+43 silly lockFile 36ac6028-save-dev –save-dev
+44 silly lockFile 944ab2e0-load-grunt-tasks load-grunt-tasks
+45 silly lockFile 944ab2e0-load-grunt-tasks load-grunt-tasks
+46 verbose addNamed [ 'grunt-pagespeed', '' ]
+47 verbose addNamed [ null, '*' ]
+48 silly lockFile 29e9f2b3-grunt-pagespeed grunt-pagespeed@
+49 verbose lock grunt-pagespeed@ C:\Users\Patrick\AppData\Roaming\npm-cache\29e9f2b3-grunt-pagespeed.lock
+50 verbose addNamed [ 'install', '' ]
+51 verbose addNamed [ null, '*' ]
+52 silly lockFile cadb329f-install install@
+53 verbose lock install@ C:\Users\Patrick\AppData\Roaming\npm-cache\cadb329f-install.lock
+54 verbose addNamed [ 'npm', '' ]
+55 verbose addNamed [ null, '*' ]
+56 silly lockFile 2f990b75-npm npm@
+57 verbose lock npm@ C:\Users\Patrick\AppData\Roaming\npm-cache\2f990b75-npm.lock
+58 verbose addNamed [ '–save-dev', '' ]
+59 verbose addNamed [ null, '*' ]
+60 silly lockFile 370b9e36-save-dev –save-dev@
+61 verbose lock –save-dev@ C:\Users\Patrick\AppData\Roaming\npm-cache\370b9e36-save-dev.lock
+62 verbose addNamed [ 'load-grunt-tasks', '' ]
+63 verbose addNamed [ null, '*' ]
+64 silly lockFile 13a274a3-load-grunt-tasks load-grunt-tasks@
+65 verbose lock load-grunt-tasks@ C:\Users\Patrick\AppData\Roaming\npm-cache\13a274a3-load-grunt-tasks.lock
+66 silly addNameRange { name: '–save-dev', range: '*', hasData: false }
+67 silly addNameRange { name: 'npm', range: '*', hasData: false }
+68 verbose request where is /–save-dev
+69 verbose request registry https://registry.npmjs.org/
+70 verbose request id e7372e8de197c04b
+71 verbose url raw /–save-dev
+72 verbose url resolving [ 'https://registry.npmjs.org/', './%E2%80%93save-dev' ]
+73 verbose url resolved https://registry.npmjs.org/%E2%80%93save-dev
+74 verbose request where is https://registry.npmjs.org/%E2%80%93save-dev
+75 info trying registry request attempt 1 at 15:01:43
+76 http GET https://registry.npmjs.org/%E2%80%93save-dev
+77 silly addNameRange { name: 'load-grunt-tasks', range: '*', hasData: false }
+78 silly addNameRange { name: 'install', range: '*', hasData: false }
+79 silly addNameRange { name: 'grunt-pagespeed', range: '*', hasData: false }
+80 verbose request where is /load-grunt-tasks
+81 verbose request registry https://registry.npmjs.org/
+82 verbose url raw /load-grunt-tasks
+83 verbose url resolving [ 'https://registry.npmjs.org/', './load-grunt-tasks' ]
+84 verbose url resolved https://registry.npmjs.org/load-grunt-tasks
+85 verbose request where is https://registry.npmjs.org/load-grunt-tasks
+86 info trying registry request attempt 1 at 15:01:43
+87 http GET https://registry.npmjs.org/load-grunt-tasks
+88 verbose request where is /grunt-pagespeed
+89 verbose request registry https://registry.npmjs.org/
+90 verbose url raw /grunt-pagespeed
+91 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-pagespeed' ]
+92 verbose url resolved https://registry.npmjs.org/grunt-pagespeed
+93 verbose request where is https://registry.npmjs.org/grunt-pagespeed
+94 info trying registry request attempt 1 at 15:01:43
+95 http GET https://registry.npmjs.org/grunt-pagespeed
+96 verbose request where is /npm
+97 verbose request registry https://registry.npmjs.org/
+98 verbose url raw /npm
+99 verbose url resolving [ 'https://registry.npmjs.org/', './npm' ]
+100 verbose url resolved https://registry.npmjs.org/npm
+101 verbose request where is https://registry.npmjs.org/npm
+102 info trying registry request attempt 1 at 15:01:43
+103 verbose etag "30UU1NULZ2XWVE1UM0V4LY7EB"
+104 http GET https://registry.npmjs.org/npm
+105 verbose request where is /install
+106 verbose request registry https://registry.npmjs.org/
+107 verbose url raw /install
+108 verbose url resolving [ 'https://registry.npmjs.org/', './install' ]
+109 verbose url resolved https://registry.npmjs.org/install
+110 verbose request where is https://registry.npmjs.org/install
+111 info trying registry request attempt 1 at 15:01:43
+112 verbose etag "WZSPSXTRJSQZK8AZJ8CRKK3S"
+113 http GET https://registry.npmjs.org/install
+114 silly lockFile 36ac6028-save-dev –save-dev
+115 silly lockFile 36ac6028-save-dev –save-dev
+116 verbose addNamed [ '–save-dev', '' ]
+117 http 304 https://registry.npmjs.org/npm
+118 silly registry.get cb [ 304,
+118 silly registry.get   { date: 'Wed, 31 Dec 2014 21:01:43 GMT',
+118 silly registry.get     server: 'Apache',
+118 silly registry.get     via: '1.1 varnish',
+118 silly registry.get     'last-modified': 'Wed, 31 Dec 2014 21:01:43 GMT',
+118 silly registry.get     'cache-control': 'max-age=60',
+118 silly registry.get     etag: '"30UU1NULZ2XWVE1UM0V4LY7EB"',
+118 silly registry.get     age: '0',
+118 silly registry.get     'x-served-by': 'cache-ord1732-ORD',
+118 silly registry.get     'x-cache': 'HIT',
+118 silly registry.get     'x-cache-hits': '1',
+118 silly registry.get     'x-timer': 'S1420059703.102320,VS0,VE38',
+118 silly registry.get     vary: 'Accept',
+118 silly registry.get     'content-length': '0',
+118 silly registry.get     'keep-alive': 'timeout=10, max=50',
+118 silly registry.get     connection: 'Keep-Alive' } ]
+119 verbose etag https://registry.npmjs.org/npm from cache
+120 http 304 https://registry.npmjs.org/install
+121 silly registry.get cb [ 304,
+121 silly registry.get   { date: 'Wed, 31 Dec 2014 21:01:43 GMT',
+121 silly registry.get     server: 'Apache',
+121 silly registry.get     via: '1.1 varnish',
+121 silly registry.get     'last-modified': 'Wed, 31 Dec 2014 21:01:43 GMT',
+121 silly registry.get     'cache-control': 'max-age=60',
+121 silly registry.get     etag: '"WZSPSXTRJSQZK8AZJ8CRKK3S"',
+121 silly registry.get     age: '0',
+121 silly registry.get     'x-served-by': 'cache-ord1729-ORD',
+121 silly registry.get     'x-cache': 'HIT',
+121 silly registry.get     'x-cache-hits': '1',
+121 silly registry.get     'x-timer': 'S1420059703.096695,VS0,VE63',
+121 silly registry.get     vary: 'Accept',
+121 silly registry.get     'content-length': '0',
+121 silly registry.get     'keep-alive': 'timeout=10, max=50',
+121 silly registry.get     connection: 'Keep-Alive' } ]
+122 verbose etag https://registry.npmjs.org/install from cache
+123 http 404 https://registry.npmjs.org/%E2%80%93save-dev
+124 verbose headers { date: 'Wed, 31 Dec 2014 21:01:43 GMT',
+124 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+124 verbose headers   'content-type': 'application/json',
+124 verbose headers   'cache-control': 'max-age=0',
+124 verbose headers   'content-length': '52',
+124 verbose headers   'accept-ranges': 'bytes',
+124 verbose headers   via: '1.1 varnish',
+124 verbose headers   age: '0',
+124 verbose headers   'x-served-by': 'cache-ord1735-ORD',
+124 verbose headers   'x-cache': 'MISS',
+124 verbose headers   'x-cache-hits': '0',
+124 verbose headers   'x-timer': 'S1420059703.097397,VS0,VE69',
+124 verbose headers   'keep-alive': 'timeout=10, max=50',
+124 verbose headers   connection: 'Keep-Alive' }
+125 silly registry.get cb [ 404,
+125 silly registry.get   { date: 'Wed, 31 Dec 2014 21:01:43 GMT',
+125 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+125 silly registry.get     'content-type': 'application/json',
+125 silly registry.get     'cache-control': 'max-age=0',
+125 silly registry.get     'content-length': '52',
+125 silly registry.get     'accept-ranges': 'bytes',
+125 silly registry.get     via: '1.1 varnish',
+125 silly registry.get     age: '0',
+125 silly registry.get     'x-served-by': 'cache-ord1735-ORD',
+125 silly registry.get     'x-cache': 'MISS',
+125 silly registry.get     'x-cache-hits': '0',
+125 silly registry.get     'x-timer': 'S1420059703.097397,VS0,VE69',
+125 silly registry.get     'keep-alive': 'timeout=10, max=50',
+125 silly registry.get     connection: 'Keep-Alive' } ]
+126 silly lockFile 370b9e36-save-dev –save-dev@
+127 silly lockFile 370b9e36-save-dev –save-dev@
+128 silly addNameRange number 2 { name: 'npm', range: '*', hasData: true }
+129 silly addNameRange versions [ 'npm',
+129 silly addNameRange   [ '1.1.25',
+129 silly addNameRange     '1.2.32',
+129 silly addNameRange     '1.3.2',
+129 silly addNameRange     '1.3.4',
+129 silly addNameRange     '1.2.20',
+129 silly addNameRange     '1.2.21',
+129 silly addNameRange     '1.2.22',
+129 silly addNameRange     '1.2.23',
+129 silly addNameRange     '1.2.24',
+129 silly addNameRange     '1.2.25',
+129 silly addNameRange     '1.2.27',
+129 silly addNameRange     '1.2.28',
+129 silly addNameRange     '1.2.30',
+129 silly addNameRange     '1.2.31',
+129 silly addNameRange     '1.3.0',
+129 silly addNameRange     '1.3.1',
+129 silly addNameRange     '1.2.19',
+129 silly addNameRange     '1.1.70',
+129 silly addNameRange     '1.1.71',
+129 silly addNameRange     '1.3.5',
+129 silly addNameRange     '1.3.6',
+129 silly addNameRange     '1.3.7',
+129 silly addNameRange     '1.3.8',
+129 silly addNameRange     '1.3.9',
+129 silly addNameRange     '1.3.10',
+129 silly addNameRange     '1.3.11',
+129 silly addNameRange     '1.3.12',
+129 silly addNameRange     '1.3.13',
+129 silly addNameRange     '1.3.14',
+129 silly addNameRange     '1.3.15',
+129 silly addNameRange     '1.3.16',
+129 silly addNameRange     '1.3.17',
+129 silly addNameRange     '1.3.18',
+129 silly addNameRange     '1.3.20',
+129 silly addNameRange     '1.3.21',
+129 silly addNameRange     '1.3.22',
+129 silly addNameRange     '1.3.23',
+129 silly addNameRange     '1.3.24',
+129 silly addNameRange     '1.3.25',
+129 silly addNameRange     '1.3.26',
+129 silly addNameRange     '1.4.0',
+129 silly addNameRange     '1.4.1',
+129 silly addNameRange     '1.4.2',
+129 silly addNameRange     '1.4.3',
+129 silly addNameRange     '1.4.4',
+129 silly addNameRange     '1.4.5',
+129 silly addNameRange     '1.4.6',
+129 silly addNameRange     '1.4.7',
+129 silly addNameRange     '1.4.8',
+129 silly addNameRange     '1.4.9',
+129 silly addNameRange     '1.4.10',
+129 silly addNameRange     '1.4.11',
+129 silly addNameRange     '1.4.12',
+129 silly addNameRange     '1.4.13',
+129 silly addNameRange     '1.4.14',
+129 silly addNameRange     '1.4.15',
+129 silly addNameRange     '1.4.16',
+129 silly addNameRange     '1.2.8000',
+129 silly addNameRange     '1.4.17',
+129 silly addNameRange     '1.4.18',
+129 silly addNameRange     '1.4.19',
+129 silly addNameRange     '1.5.0-alpha-0',
+129 silly addNameRange     '1.5.0-alpha-1',
+129 silly addNameRange     '1.4.20',
+129 silly addNameRange     '1.5.0-alpha-2',
+129 silly addNameRange     '1.4.21',
+129 silly addNameRange     '1.5.0-alpha-3',
+129 silly addNameRange     '1.5.0-alpha-4',
+129 silly addNameRange     '2.0.0-alpha-5',
+129 silly addNameRange     '1.4.22',
+129 silly addNameRange     '1.4.23',
+129 silly addNameRange     '2.0.0-alpha.6.0',
+129 silly addNameRange     '1.4.24',
+129 silly addNameRange     '2.0.0-alpha.6',
+129 silly addNameRange     '2.0.0-alpha.7',
+129 silly addNameRange     '2.0.0-beta.0',
+129 silly addNameRange     '1.4.25',
+129 silly addNameRange     '2.0.0-beta.1',
+129 silly addNameRange     '1.4.26',
+129 silly addNameRange     '2.0.0-beta.2',
+129 silly addNameRange     '1.4.27',
+129 silly addNameRange     '2.0.0-beta.3',
+129 silly addNameRange     '1.4.28',
+129 silly addNameRange     '2.0.0',
+129 silly addNameRange     '2.0.1',
+129 silly addNameRange     '2.0.2',
+129 silly addNameRange     '2.1.0',
+129 silly addNameRange     '2.1.1',
+129 silly addNameRange     '2.1.2',
+129 silly addNameRange     '2.1.3',
+129 silly addNameRange     '2.1.4',
+129 silly addNameRange     '2.1.5',
+129 silly addNameRange     '2.1.6',
+129 silly addNameRange     '2.1.7',
+129 silly addNameRange     '2.1.8',
+129 silly addNameRange     '2.1.9',
+129 silly addNameRange     '2.1.10',
+129 silly addNameRange     '2.1.11',
+129 silly addNameRange     '2.1.12',
+129 silly addNameRange     '2.1.13',
+129 silly addNameRange     '2.1.14',
+129 silly addNameRange     '2.1.15',
+129 silly addNameRange     '2.1.16',
+129 silly addNameRange     '2.1.17' ] ]
+130 verbose addNamed [ 'npm', '2.1.16' ]
+131 verbose addNamed [ '2.1.16', '2.1.16' ]
+132 silly lockFile a0106e17-npm-2-1-16 npm@2.1.16
+133 verbose lock npm@2.1.16 C:\Users\Patrick\AppData\Roaming\npm-cache\a0106e17-npm-2-1-16.lock
+134 silly addNameRange number 2 { name: 'install', range: '*', hasData: true }
+135 silly addNameRange versions [ 'install',
+135 silly addNameRange   [ '0.1.1',
+135 silly addNameRange     '0.1.2',
+135 silly addNameRange     '0.1.3',
+135 silly addNameRange     '0.1.4',
+135 silly addNameRange     '0.1.5',
+135 silly addNameRange     '0.1.6',
+135 silly addNameRange     '0.1.7',
+135 silly addNameRange     '0.1.8' ] ]
+136 verbose addNamed [ 'install', '0.1.8' ]
+137 verbose addNamed [ '0.1.8', '0.1.8' ]
+138 silly lockFile 584c81dc-install-0-1-8 install@0.1.8
+139 verbose lock install@0.1.8 C:\Users\Patrick\AppData\Roaming\npm-cache\584c81dc-install-0-1-8.lock
+140 silly lockFile a0106e17-npm-2-1-16 npm@2.1.16
+141 silly lockFile a0106e17-npm-2-1-16 npm@2.1.16
+142 silly lockFile 584c81dc-install-0-1-8 install@0.1.8
+143 silly lockFile 584c81dc-install-0-1-8 install@0.1.8
+144 silly lockFile 2f990b75-npm npm@
+145 silly lockFile 2f990b75-npm npm@
+146 silly lockFile cadb329f-install install@
+147 silly lockFile cadb329f-install install@
+148 http 200 https://registry.npmjs.org/grunt-pagespeed
+149 silly registry.get cb [ 200,
+149 silly registry.get   { date: 'Wed, 31 Dec 2014 21:01:43 GMT',
+149 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+149 silly registry.get     etag: '"AKEKE1KIF5DVU660D0ITQKCKT"',
+149 silly registry.get     'content-type': 'application/json',
+149 silly registry.get     'cache-control': 'max-age=60',
+149 silly registry.get     'content-length': '22316',
+149 silly registry.get     'accept-ranges': 'bytes',
+149 silly registry.get     via: '1.1 varnish',
+149 silly registry.get     age: '0',
+149 silly registry.get     'x-served-by': 'cache-ord1721-ORD',
+149 silly registry.get     'x-cache': 'MISS',
+149 silly registry.get     'x-cache-hits': '0',
+149 silly registry.get     'x-timer': 'S1420059703.100229,VS0,VE122',
+149 silly registry.get     vary: 'Accept',
+149 silly registry.get     'keep-alive': 'timeout=10, max=50',
+149 silly registry.get     connection: 'Keep-Alive' } ]
+150 silly addNameRange number 2 { name: 'grunt-pagespeed', range: '*', hasData: true }
+151 silly addNameRange versions [ 'grunt-pagespeed',
+151 silly addNameRange   [ '0.0.1',
+151 silly addNameRange     '0.0.2',
+151 silly addNameRange     '0.0.3',
+151 silly addNameRange     '0.0.4',
+151 silly addNameRange     '0.0.5',
+151 silly addNameRange     '0.0.6',
+151 silly addNameRange     '0.0.7',
+151 silly addNameRange     '0.0.8',
+151 silly addNameRange     '0.0.9',
+151 silly addNameRange     '0.1.0',
+151 silly addNameRange     '0.1.1',
+151 silly addNameRange     '0.1.2',
+151 silly addNameRange     '0.1.3',
+151 silly addNameRange     '0.2.0',
+151 silly addNameRange     '0.3.0',
+151 silly addNameRange     '0.4.0',
+151 silly addNameRange     '0.4.1' ] ]
+152 verbose addNamed [ 'grunt-pagespeed', '0.4.1' ]
+153 verbose addNamed [ '0.4.1', '0.4.1' ]
+154 silly lockFile 0bc299f1-grunt-pagespeed-0-4-1 grunt-pagespeed@0.4.1
+155 verbose lock grunt-pagespeed@0.4.1 C:\Users\Patrick\AppData\Roaming\npm-cache\0bc299f1-grunt-pagespeed-0-4-1.lock
+156 silly lockFile ed537222-espeed-grunt-pagespeed-0-4-1-tgz https://registry.npmjs.org/grunt-pagespeed/-/grunt-pagespeed-0.4.1.tgz
+157 verbose lock https://registry.npmjs.org/grunt-pagespeed/-/grunt-pagespeed-0.4.1.tgz C:\Users\Patrick\AppData\Roaming\npm-cache\ed537222-espeed-grunt-pagespeed-0-4-1-tgz.lock
+158 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-pagespeed/-/grunt-pagespeed-0.4.1.tgz',
+158 verbose addRemoteTarball   '5971738b5d12f657dcb9b1c9ddbee7192b2ed56c' ]
+159 info retry fetch attempt 1 at 15:01:43
+160 verbose fetch to= C:\Users\Patrick\AppData\Local\Temp\npm-17692-FqNMzJQ2\registry.npmjs.org\grunt-pagespeed\-\grunt-pagespeed-0.4.1.tgz
+161 http GET https://registry.npmjs.org/grunt-pagespeed/-/grunt-pagespeed-0.4.1.tgz
+162 http 200 https://registry.npmjs.org/load-grunt-tasks
+163 silly registry.get cb [ 200,
+163 silly registry.get   { date: 'Wed, 31 Dec 2014 21:01:43 GMT',
+163 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+163 silly registry.get     etag: '"6XTZE09P2HOWHAJZTRXUIGKX0"',
+163 silly registry.get     'content-type': 'application/json',
+163 silly registry.get     'cache-control': 'max-age=60',
+163 silly registry.get     'content-length': '19431',
+163 silly registry.get     'accept-ranges': 'bytes',
+163 silly registry.get     via: '1.1 varnish',
+163 silly registry.get     age: '0',
+163 silly registry.get     'x-served-by': 'cache-ord1721-ORD',
+163 silly registry.get     'x-cache': 'HIT',
+163 silly registry.get     'x-cache-hits': '1',
+163 silly registry.get     'x-timer': 'S1420059703.081207,VS0,VE272',
+163 silly registry.get     vary: 'Accept',
+163 silly registry.get     'keep-alive': 'timeout=10, max=50',
+163 silly registry.get     connection: 'Keep-Alive' } ]
+164 silly addNameRange number 2 { name: 'load-grunt-tasks', range: '*', hasData: true }
+165 silly addNameRange versions [ 'load-grunt-tasks',
+165 silly addNameRange   [ '0.1.0',
+165 silly addNameRange     '0.1.1',
+165 silly addNameRange     '0.1.2',
+165 silly addNameRange     '0.1.3',
+165 silly addNameRange     '0.2.0',
+165 silly addNameRange     '0.2.1',
+165 silly addNameRange     '0.3.0',
+165 silly addNameRange     '0.4.0',
+165 silly addNameRange     '0.5.0',
+165 silly addNameRange     '0.6.0',
+165 silly addNameRange     '1.0.0',
+165 silly addNameRange     '2.0.0' ] ]
+166 verbose addNamed [ 'load-grunt-tasks', '2.0.0' ]
+167 verbose addNamed [ '2.0.0', '2.0.0' ]
+168 silly lockFile 28f14b2f-load-grunt-tasks-2-0-0 load-grunt-tasks@2.0.0
+169 verbose lock load-grunt-tasks@2.0.0 C:\Users\Patrick\AppData\Roaming\npm-cache\28f14b2f-load-grunt-tasks-2-0-0.lock
+170 silly lockFile d7b5a99b-tasks-load-grunt-tasks-2-0-0-tgz https://registry.npmjs.org/load-grunt-tasks/-/load-grunt-tasks-2.0.0.tgz
+171 verbose lock https://registry.npmjs.org/load-grunt-tasks/-/load-grunt-tasks-2.0.0.tgz C:\Users\Patrick\AppData\Roaming\npm-cache\d7b5a99b-tasks-load-grunt-tasks-2-0-0-tgz.lock
+172 verbose addRemoteTarball [ 'https://registry.npmjs.org/load-grunt-tasks/-/load-grunt-tasks-2.0.0.tgz',
+172 verbose addRemoteTarball   '5e3a9579694cc4b3fee0b1839ff4510b85dc9c34' ]
+173 info retry fetch attempt 1 at 15:01:43
+174 verbose fetch to= C:\Users\Patrick\AppData\Local\Temp\npm-17692-FqNMzJQ2\registry.npmjs.org\load-grunt-tasks\-\load-grunt-tasks-2.0.0.tgz
+175 http GET https://registry.npmjs.org/load-grunt-tasks/-/load-grunt-tasks-2.0.0.tgz
+176 http 200 https://registry.npmjs.org/load-grunt-tasks/-/load-grunt-tasks-2.0.0.tgz
+177 silly lockFile d7b5a99b-tasks-load-grunt-tasks-2-0-0-tgz https://registry.npmjs.org/load-grunt-tasks/-/load-grunt-tasks-2.0.0.tgz
+178 silly lockFile d7b5a99b-tasks-load-grunt-tasks-2-0-0-tgz https://registry.npmjs.org/load-grunt-tasks/-/load-grunt-tasks-2.0.0.tgz
+179 silly lockFile 28f14b2f-load-grunt-tasks-2-0-0 load-grunt-tasks@2.0.0
+180 silly lockFile 28f14b2f-load-grunt-tasks-2-0-0 load-grunt-tasks@2.0.0
+181 silly lockFile 13a274a3-load-grunt-tasks load-grunt-tasks@
+182 silly lockFile 13a274a3-load-grunt-tasks load-grunt-tasks@
+183 http 200 https://registry.npmjs.org/grunt-pagespeed/-/grunt-pagespeed-0.4.1.tgz
+184 silly lockFile ed537222-espeed-grunt-pagespeed-0-4-1-tgz https://registry.npmjs.org/grunt-pagespeed/-/grunt-pagespeed-0.4.1.tgz
+185 silly lockFile ed537222-espeed-grunt-pagespeed-0-4-1-tgz https://registry.npmjs.org/grunt-pagespeed/-/grunt-pagespeed-0.4.1.tgz
+186 silly lockFile 0bc299f1-grunt-pagespeed-0-4-1 grunt-pagespeed@0.4.1
+187 silly lockFile 0bc299f1-grunt-pagespeed-0-4-1 grunt-pagespeed@0.4.1
+188 silly lockFile 29e9f2b3-grunt-pagespeed grunt-pagespeed@
+189 silly lockFile 29e9f2b3-grunt-pagespeed grunt-pagespeed@
+190 error 404 404 Not Found: %E2%80%93save-dev
+190 error 404
+190 error 404 '%E2%80%93save-dev' is not in the npm registry.
+190 error 404 You should bug the author to publish it
+190 error 404 It was specified as a dependency of 'udportfolio'
+190 error 404
+190 error 404 Note that you can also install from a
+190 error 404 tarball, folder, or http url, or git url.
+191 error System Windows_NT 6.2.9200
+192 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "grunt-pagespeed" "–save-dev" "npm" "install" "load-grunt-tasks" "–save-dev"
+193 error cwd C:\Users\Patrick\udportfolio
+194 error node -v v0.10.35
+195 error npm -v 1.4.28
+196 error code E404
+197 verbose exit [ 1, true ]
