@@ -21,6 +21,7 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-uglify": "^0.7.0",
     "grunt-pagespeed": "^0.4.1",
+    "gulp": "^3.8.10",
     "load-grunt-tasks": "^2.0.0",
     "ngrok": "^0.1.98"
   }
