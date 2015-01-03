@@ -42,7 +42,7 @@
           </li>
 
           <li>
-            <img style="width: 100px;" src="img/pizzeria.png">
+            <img style="width: 100px;" src="img/pizzeria-100w.jpg">
             <a href="views/pizza.html">Cam's Pizzeria</a>
             <p>Who wants a performant pizza?</p>
           </li>
@@ -53,24 +53,6 @@
       <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
     </footer>
   </body>
-    <!--<script>
-      (function(w,g){w['GoogleAnalyticsObject']=g;
-      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
-
-      // TODO: replace with your Google Analytics profile ID.
-      ga('create', 'UA-XXXX-Y');
-      ga('send', 'pageview');
-    </script>
-    <script>
-    function logCRP() {
-      var t = window.performance.timing,
-        dcl = t.domContentLoadedEventStart - t.domLoading,
-        complete = t.domComplete - t.domLoading;
-      var stats = document.getElementById("crp-stats");
-      stats.textContent = 'DCL: ' + dcl + 'ms, onload: ' + complete + 'ms';
-    }
-    </script>
-    <script>function logCRP(){var o=window.performance.timing,n=o.domContentLoadedEventStart-o.domLoading,t=o.domComplete-o.domLoading,d=document.getElementById("crp-stats");d.textContent="DCL: "+n+"ms, onload: "+t+"ms"}window.addEventListener("load",function(){logCRP()});</script>-->
     <script>function logCRP(){var n=window.performance.timing,t=n.domContentLoadedEventStart-n.domLoading,e=n.domComplete-n.domLoading,o=document.getElementById("crp-stats");o.textContent="DCL: "+t+"ms, onload: "+e+"ms"}!function(n,t){n.GoogleAnalyticsObject=t,n[t]=n[t]||function(){(n[t].q=n[t].q||[]).push(arguments)},n[t].l=1*new Date}(window,"ga"),ga("create","UA-XXXX-Y"),ga("send","pageview"),window.addEventListener("load",function(){logCRP()});</script>
     <script async src="http://www.google-analytics.com/analytics.js"></script>
 </html>
