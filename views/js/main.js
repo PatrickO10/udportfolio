@@ -542,9 +542,11 @@ function updatePositions() {
 }
 
 // When scroll gets the latest scroll position and calls rAF if one unless one is already called
-window.addEventListener('scroll', onScroll, requestTick);
+window.addEventListener('scroll', onScroll);
+
 function onScroll() {
   latestKnownCached = document.body.scrollTop;
+  requestTick();
 }
 
 function requestTick() {
