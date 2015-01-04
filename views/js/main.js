@@ -381,12 +381,10 @@ var pizzaElementGenerator = function(i) {
   pizzaDescriptionContainer = document.createElement("div");
 
   pizzaContainer.classList.add("randomPizzaContainer");
-  pizzaContainer.style.width = "33.33%";
-  pizzaContainer.style.height = "325px";
   pizzaContainer.id = "pizza" + i;                // gives each pizza element a unique id
   pizzaImageContainer.classList.add("col-md-6");
 
-  pizzaImage.src = "images/pizza-med.png";
+  pizzaImage.src = "images/pizza.png";
   pizzaImage.classList.add("img-responsive");
   pizzaImageContainer.appendChild(pizzaImage);
   pizzaContainer.appendChild(pizzaImageContainer);
@@ -542,7 +540,7 @@ function updatePositions() {
 }
 
 // When scroll gets the latest scroll position and calls rAF if one unless one is already called
-window.addEventListener('scroll', onScroll);
+window.addEventListener('scroll', onScroll, false);
 
 function onScroll() {
   latestKnownCached = document.body.scrollTop;

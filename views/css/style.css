@@ -39,6 +39,8 @@ form {
 
 .randomPizzaContainer {
   float: left;
+  width: 33.33%;
+  height: 325px;
   display: flex;
 }
 
@@ -50,4 +52,18 @@ form {
 
  .container {
   background-color: rgba(240, 60, 60, 0.8);
+}
+
+img.img-desktop {
+  display: initial;
+}
+
+img.img-mobile {
+  display: none;
+}
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (max-device-width : 480px) {
+  img.desktop-img { display: none;}
+  img.mobile-img { display: initial;}
 }
