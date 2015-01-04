@@ -386,7 +386,7 @@ var pizzaElementGenerator = function(i) {
   pizzaContainer.id = "pizza" + i;                // gives each pizza element a unique id
   pizzaImageContainer.classList.add("col-md-6");
 
-  pizzaImage.src = "images/pizza.png";
+  pizzaImage.src = "images/pizza-med.png";
   pizzaImage.classList.add("img-responsive");
   pizzaImageContainer.appendChild(pizzaImage);
   pizzaContainer.appendChild(pizzaImageContainer);
@@ -462,9 +462,9 @@ var resizePizzas = function(size) {
   // Moved dx and newwidth out of for loop because it was unnecessarily resizing each pizza at a time
   function changePizzaSizes(size) {
     var pizzabox = document.querySelectorAll(".randomPizzaContainer"),
-    len = pizzabox.length,
-    dx = determineDx(pizzabox[99], size),
-    newwidth = (pizzabox[99].offsetWidth + dx) + 'px';
+      len = pizzabox.length,
+      dx = determineDx(pizzabox[0], size),
+      newwidth = (pizzabox[0].offsetWidth + dx) + 'px';
     for (var i = 0; i < len; i++) {
       pizzabox[i].style.width = newwidth;
     }
@@ -523,12 +523,12 @@ var items = document.getElementsByClassName('mover'), // Don't need to keep insi
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
+  var cachedScrollTop = latestKnownCached / 1250 // Took out of loop
   ticking = false; // Reset to capture next onScroll
-  var cachedScrollTop = latestKnownCached;
 
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
-    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+    var phase = Math.sin((cachedScrollTop) + (i % 5)) * 100;
+    items[i].style.left = items[i].basicLeft + phase + 'px';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
@@ -541,17 +541,15 @@ function updatePositions() {
   }
 }
 
-// runs onScroll... on scroll
-window.addEventListener('scroll', onScroll, false);
-
+// When scroll gets the latest scroll position and calls rAF if one unless one is already called
+window.addEventListener('scroll', onScroll, requestTick);
 function onScroll() {
-  latestKnownCached = document.body.scrollTop; // Took out of loop. Calculates 1 time instead of 200 times when updated
-  requestTick();
+  latestKnownCached = document.body.scrollTop;
 }
 
 function requestTick() {
   if(!ticking) {
-    window.requestAnimationFrame(updatePositions); // Call rAF unless one is already called
+    window.requestAnimationFrame(updatePositions);
   }
   ticking = true;
 }
@@ -561,13 +559,13 @@ function requestTick() {
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
+  for (var i = 0; i < 32; i++) {
     var elem = document.createElement('img');
-    elem.className = 'mover';
+    elem.classList.add('mover');
     elem.src = "images/pizza-scaled.png";
     elem.basicLeft = (i % cols) * s;
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
     document.querySelector("#movingPizzas1").appendChild(elem);
   }
-  updatePositions();
+  window.requestAnimationFrame(updatePositions);
 });
