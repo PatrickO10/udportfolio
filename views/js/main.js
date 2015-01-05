@@ -511,48 +511,48 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 // The following code for sliding background pizzas was pulled from Ilya's demo found at:
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
 
-
 var items = document.getElementsByClassName('mover'), // Don't need to keep inside b/c value doesn't change
-    latestKnownCached = 0,
+    latestKnownScrolly = 0,
     ticking = false;
 
+function requestTick() {
+    if(!ticking) {
+        requestAnimationFrame(updatePositions);
+        ticking = true;
+    }
+}
+
+function onScroll() {
+  latestKnownScrolly = window.scrollY;
+  requestTick();
+}
 
 // Moves the sliding background pizzas based on scroll position
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
-  var cachedScrollTop = latestKnownCached / 1250 // Took out of loop
-  ticking = false; // Reset to capture next onScroll
-
-  for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((cachedScrollTop) + (i % 5)) * 100;
-    items[i].style.left = items[i].basicLeft + phase + 'px';
+  cachedScrolly = latestKnownScrolly / 1250;
+  var phase = [];
+  // Calculates the math outside of the longer loop below
+  // And puts it in the phase array
+  for (var i = 0; i < 5; i++) {
+    phase.push(Math.sin(cachedScrolly + (i % 5)) * 100);
   }
-
-  // User Timing API to the rescue again. Seriously, it's worth learning.
-  // Super easy to create custom metrics.
+  // Second loop moves the position of the pizza
+  for (var i = 0; i < items.length; i++) {
+    items[i].style.transform = 'translate3d(' + (items[i].basicLeft + phase[(i%5)]) + 'px, 0px, 0px)';
+  }
   window.performance.mark("mark_end_frame");
   window.performance.measure("measure_frame_duration", "mark_start_frame", "mark_end_frame");
   if (frame % 10 === 0) {
     var timesToUpdatePosition = window.performance.getEntriesByName("measure_frame_duration");
     logAverageFrame(timesToUpdatePosition);
   }
+  ticking = false; // Reset to capture next onScroll allowing more rAF to be called
 }
 
-// When scroll gets the latest scroll position and calls rAF if one unless one is already called
+// When scroll gets the latest scroll position
 window.addEventListener('scroll', onScroll, false);
-
-function onScroll() {
-  latestKnownCached = document.body.scrollTop;
-  requestTick();
-}
-
-function requestTick() {
-  if(!ticking) {
-    window.requestAnimationFrame(updatePositions);
-  }
-  ticking = true;
-}
 
 // Generates the sliding pizzas when the page loads.
 // Removed styling the element, putting it in the inlined css
@@ -567,5 +567,5 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
     document.querySelector("#movingPizzas1").appendChild(elem);
   }
-  window.requestAnimationFrame(updatePositions);
+  updatePositions();
 });
