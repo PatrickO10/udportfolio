@@ -480,13 +480,16 @@ var resizePizzas = function(size) {
 window.performance.mark("mark_start_generating"); // collect timing data
 
 // Took variable out of for-loop below
-// No reason to loop 100 times for the same element
+// No reason to loop 97 times for the same element
 var pizzasDiv = document.getElementById("randomPizzas");
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
-for (var i = 2; i < 100; i++) {
-  pizzasDiv.appendChild(pizzaElementGenerator(i));
-}
+// This will request that the animation function be called before the browser performs the next repaint.
+window.requestAnimationFrame(function() {
+  for (var i = 2; i < 100; i++) {
+    pizzasDiv.appendChild(pizzaElementGenerator(i));
+  }
+});
 
 // User Timing API again. These measurements tell you how long it took to generate the initial pizzas
 window.performance.mark("mark_end_generating");
