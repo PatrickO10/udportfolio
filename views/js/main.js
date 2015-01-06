@@ -458,7 +458,7 @@ var resizePizzas = function(size) {
   }
 
   // Iterates through pizza elements on the page and changes their widths
-  // Moved dx and newwidth out of for loop because it was unnecessarily resizing each pizza at a time
+  // Moved dx and newwidth out of for loop because it was unnecessarily calculate each pizza at a time
   function changePizzaSizes(size) {
     var pizzabox = document.querySelectorAll(".randomPizzaContainer"),
       len = pizzabox.length,
@@ -519,6 +519,7 @@ var items = document.getElementsByClassName('mover'), // Don't need to keep insi
     latestKnownScrolly = 0,
     ticking = false;
 
+// Ensures that rAF doesn't keep calling
 function requestTick() {
     if(!ticking) {
         requestAnimationFrame(updatePositions);
