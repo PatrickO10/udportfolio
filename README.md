@@ -1,6 +1,6 @@
 ## Website Performance Optimization portfolio project
 
-I optimized this online portfolio for speed! In particular, I optimized the critical rendering path and made this page render as quickly as possible by applying the techniques I've picked up in the [Website Performance Optimization course.](https://www.udacity.com/course/ud884).
+I optimized this online portfolio for speed! In particular, I optimized the critical rendering path and made this page render as quickly as possible by applying the techniques I've picked up in the [Website Performance Optimization course](https://www.udacity.com/course/ud884).
 
 To get started, check out the repository and inspect the code.
 
@@ -9,7 +9,7 @@ You can view the page at <a href="patricko10.github.io/udportfolio">patricko10.g
 * [index.html](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fpatricko10.github.io%2Fudportfolio%2F&tab=mobile)
 * [project-2048.html](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fpatricko10.github.io%2Fudportfolio%2Fproject-2048.html)
 * [project-webperf.html](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fpatricko10.github.io%2Fudportfolio%2Fproject-webperf.html)
-* [project-mobile.html](http://patricko10.github.io/udportfolio/project-mobile.html)
+* [project-mobile.html](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fpatricko10.github.io%2Fudportfolio%2Fproject-mobile.html)
 * [pizza.html](https://developers.google.com/speed/pagespeed/insights/?url=patricko10.github.io%2Fudportfolio%2Fviews%2Fpizza.html)
 
 If you want to run it on your local machine. Download and unzip all files to a local directory, and then open the index.html with your favorite browser that runs JavaScript.
