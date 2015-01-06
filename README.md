@@ -1,32 +1,23 @@
 ## Website Performance Optimization portfolio project
 
-Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
+I optimized this online portfolio for speed! In particular, I optimized the critical rendering path and made this page render as quickly as possible by applying the techniques I've picked up in the [Website Performance Optimization course.](https://www.udacity.com/course/ud884).
 
 To get started, check out the repository, inspect the code,
 
 ### Getting started
+You can view the site [here](patricko10.github.io/udportfolio)
+You can check my pagespeed scores:
+ [index.html](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fpatricko10.github.io%2Fudportfolio%2F&tab=mobile)
+ [project-2048.html](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fpatricko10.github.io%2Fudportfolio%2Fproject-2048.html)
+ [project-webperf.html](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fpatricko10.github.io%2Fudportfolio%2Fproject-webperf.html)
+ [project-mobile.html](http://patricko10.github.io/udportfolio/project-mobile.html)
+ [pizza.html](https://developers.google.com/speed/pagespeed/insights/?url=patricko10.github.io%2Fudportfolio%2Fviews%2Fpizza.html)
 
-Some useful tips to help you get started:
+If you want to run it on your local machine. Download and unzip all files to a local directory, and then open the index.html with your favorite browser that runs JavaScript.
 
-1. Check out the repository
-1. To inspect the site on your phone, you can run a local server
 
-  ```bash
-  $> cd /path/to/your-project-folder
-  $> python -m SimpleHTTPServer 8080
-  ```
 
-1. Open a browser and visit localhost:8080
-1. Download and install [ngrok](https://ngrok.com/) to make your local server accessible remotely.
 
-  ``` bash
-  $> cd /path/to/your-project-folder
-  $> ngrok 8080
-  ```
-
-1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights! [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
-
-Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
 ### Optimization Tips and Tricks
 * [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")

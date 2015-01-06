@@ -1,0 +1,37 @@
+Read over this a lot for tips and tricks:
+https://developers.google.com/web/fundamentals/performance/
+
+Jank:
+https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
+http://www.html5rocks.com/en/tutorials/speed/rendering/#toc-vsync
+
+rAF - Animation
+http://www.html5rocks.com/en/tutorials/speed/animations/
+https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations
+https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent#structure
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.offsetWidth
+http://www.html5rocks.com/en/tutorials/speed/scrolling/
+http://www.html5rocks.com/en/tutorials/speed/animations/
+http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html
+
+Used pagespeed insights to check the pagespeed of my pages.
+https://developers.google.com/speed/pagespeed/insights/
+
+Other student’s projects I looked at:
+http://dawoonc.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html
+https://github.com/ftchirou/frontend-nanodegree-mobile-portfolio
+https://github.com/MimiBambino/Optimizer2/tree/master
+
+Gulp:
+
+http://www.youtube.com/playlist?list=PLLnpHn493BHE2RsdyUNpbiVn-cfuV7Fos
+https://www.npmjs.com/package/gulp-minify-html
+https://www.npmjs.com/package/gulp-inline-css
+http://addyosmani.com/blog/removing-unused-css/
+
+Media query:
+http://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+
+Image optimization:
+Used gulp and
+Used gimp for scaling and compressing
