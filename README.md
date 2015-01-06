@@ -5,8 +5,7 @@ I optimized this online portfolio for speed! In particular, I optimized the crit
 To get started, check out the repository and inspect the code.
 
 ### Getting started
-You can view the site [here](patricko10.github.io/udportfolio)
-You can check my pagespeed scores:
+You can view the page at <a href="patricko10.github.io/udportfolio">patricko10.github.io/udportfolio</a> and you can check my pagespeed scores:
 * [index.html](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fpatricko10.github.io%2Fudportfolio%2F&tab=mobile)
 * [project-2048.html](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fpatricko10.github.io%2Fudportfolio%2Fproject-2048.html)
 * [project-webperf.html](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fpatricko10.github.io%2Fudportfolio%2Fproject-webperf.html)
